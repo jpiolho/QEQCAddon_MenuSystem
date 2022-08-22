@@ -1,5 +1,7 @@
+#include "defs.qc"
+
 static string menu_text;
-static string menu_option[MENUSYSTEM_MAX_OPTIONS];
+static string menu_option[MENUSYSTEM_MAX_CHOICES];
 static float menu_options;
 
 class MenuSystem {
@@ -19,7 +21,7 @@ class MenuSystem {
 
 	
 	static void(string text) AddChoice = {
-		if(menu_options >= MENUSYSTEM_MAX_OPTIONS)
+		if(menu_options >= MENUSYSTEM_MAX_CHOICES)
 			objerror("Too many menu options");
 
 		menu_option[menu_options++] = text;
@@ -43,7 +45,7 @@ class MenuSystem {
 
 		// Handle menu callbacks
 		if(self.menucallback != __NULL__) {
-			if(self.impulse >= MENUSYSTEM_IMPULSE_BASE && self.impulse < (MENUSYSTEM_IMPULSE_BASE + MENUSYSTEM_MAX_OPTIONS)) {
+			if(self.impulse >= MENUSYSTEM_IMPULSE_BASE && self.impulse < (MENUSYSTEM_IMPULSE_BASE + MENUSYSTEM_MAX_CHOICES)) {
 				void(float menu) callback = self.menucallback; // Backup the callback
 				self.menucallback = __NULL__;	
 				callback(self.impulse - MENUSYSTEM_IMPULSE_BASE);

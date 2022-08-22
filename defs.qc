@@ -2,8 +2,8 @@
 #define MENUSYSTEM_IMPULSE_BASE 200
 #endif
 
-#ifndef MENUSYSTEM_MAX_OPTIONS
-#define MENUSYSTEM_MAX_OPTIONS 32
+#ifndef MENUSYSTEM_MAX_CHOICES
+#define MENUSYSTEM_MAX_CHOICES 32
 #endif
 
 .void(float menu) menucallback;
