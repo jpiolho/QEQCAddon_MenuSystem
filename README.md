@@ -1,4 +1,4 @@
-# Quake Enhanced - QuakeC - Library Menusystem
+# QEQC Library - MenuSystem
 This is a small library that you can add to any QE codebase that will provide you with a menu system based around prompts.
 
 ## How to add
