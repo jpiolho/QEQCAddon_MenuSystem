@@ -1,5 +1,5 @@
-# Quake Enhanced - QuakeC - Lib Menusystem
-This is a small addon that you can add to any QE codebase that will provide you with a menu system based around prompts.
+# Quake Enhanced - QuakeC - Library Menusystem
+This is a small library that you can add to any QE codebase that will provide you with a menu system based around prompts.
 
 ## How to add
 1. Clone or add this repo as a submodule inside your code libs folder (prefered: `<root>/libs/menusystem`)
