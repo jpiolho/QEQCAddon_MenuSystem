@@ -21,9 +21,9 @@ MenuSystem::Send(self);
 ```
 // Function that handles what option the player choose for the menu
 void(float menu) Menu_Team = {
-  if(menu == 0)
+  if(menu == 0) // Choice 1
     self.team = 1;
-  else if(menu == 1)
+  else if(menu == 1) // Choice 2
     self.team = 2;
 };
 
